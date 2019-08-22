@@ -1,0 +1,33 @@
+FileSystem – Fornece o nome do sistema de arquivos.
+Size – nos dá um tamanho total do sistema de arquivos específico.
+Used – Mostra a quantidade de espaço em disco que já está em uso no sistema de arquivos específico.
+Available – Mostra a quantidade de espaço restante no sistema de arquivos específico.
+Use% – Mostra a quantidade de espaço em disco em porcentagem já usada.
+Mounted On – A última coluna indica o ponto de montagem desse sistema de arquivos.
+Mais colunas podem ser mostradas usando determinadas opções com este comando.
+
+Recomendamos usar este comando com opções adicionais como essas:
+
+df -h – Ele será exibido em um formato humano melhor e mais legível. Usando este comando, o espaço em disco será mostrado em GB (a menos que seja menor que um GB, então ele será exibido em MB ou mesmo B).
+
+df -m – Pode ser usado para exibir informações de uso do sistema de arquivos em MB.
+
+df -k – Mesmo que o anterior, pode ser usado para exibir informações de uso do sistema de arquivos em KB.
+
+df -T – Esta opção mostrará o tipo de sistema de arquivos (uma nova coluna aparecerá).
+
+df -ht /home – Usando esta opção, você pode exibir informações sobre um sistema de arquivos específico (em um formato legível por humanos).
+
+df --help – Mostrar todos os outros comandos úteis que você pode usar e fornecer mais informações sobre eles.
+
+du /home/user/Desktop/ – Esta opção permite ver na Desktop do usuário o que ele irá recursivamente fornecer informações sobre o uso do disco de pastas e arquivos que estão na nossa área de trabalho (o que significa que todos os subdiretórios são incluídos também).
+
+du -h /home/user/Desktop/ – Assim como com df, a opção –h exibe informações em um formato mais legível para humanos.
+
+du -sh /home/user/Desktop/ – Opção –s nos dará o tamanho total de uma pasta especificada (neste caso, ele irá mostrar o tamanho total da pasta Desktop).
+
+du -m /home/user/Desktop/ – Assim como com df, isso nos fornecerá informações em Megabytes (podemos usar –k para ver informações em Kilobytes.
+
+du -h --time /home/user/Desktop/ – Isso nos dará informações com base na data da última modificação dos arquivos e pastas exibidos.
+
+df --help – Mostrar todos os outros comandos úteis que você pode usar e fornecer mais informações sobre eles.
