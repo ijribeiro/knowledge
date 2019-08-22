@@ -1,0 +1,12 @@
+Split file based on bytes:
+
+[root@ijribeio ~]# split -b7000000 tuxlap.txt
+Split file based on KB:
+
+[root@ijribeio ~]# split -b 70K tuxlap.txt
+Split file based on MB:
+
+[root@ijribeio ~]# split -b 7M tuxlap.txt
+Split file based on GB:
+
+[root@ijribeio ~]# split -b 7G tuxlap.txt

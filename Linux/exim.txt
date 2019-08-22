@@ -1,0 +1,134 @@
+
+Passo 0: Consulte a quantidade de tentativas de conexões recebidas em seu servidor
+
+# cat /var/log/exim_mainlog | grep -i ylmf-pc | wc -l
+
+
+01 - Veja todas as configurações de seu servidor:
+
+exim -bP
+
+02 - Ver o que o Exim está fazendo agora:
+
+exiwhat
+
+03 - Lista de mensagens (quantidade, volume, tempo, domínio ...)
+
+exim -bp | exiqsumm
+
+04 - Quantos emails estão na fila:
+
+exim -bpc
+
+05 - Use -f para pesquisar as mensagens de um remetente específico:
+
+
+exiqgrep -f [usuario]@dominio
+
+06 - Use -r para pesquisar as mensagens para um destinatário específico:
+
+exiqgrep -r [usuario]@dominio
+
+07 - Use -o para retornar as mensagens mais velhas que o número de segundos especificado. Por exemplo, mensagens mais velhas que 1 dia:
+
+exiqgrep -o 86400 [...]
+
+08 - Use -y para retornar as mensagens que são mais novas que o número de segundos especificado. Por exemplo, mensagens mais novas que 1 hora:
+
+exiqgrep -y 3600 [...]
+
+09 - Use -s para retornar as mensagens por tamanho utilizando expressão regular. Por exemplo, 700-799 bytes:
+
+exiqgrep -s '^7..$' [...]
+
+10 - Use -z para retornar somente as mensagens frozen, ou -x para retornar somente as não frozen. Existem também algumas opções que alteram a forma do retorno.
+
+11 - Use -i para retornar apenas o ID da mensagem como resultado de uma das duas opções de pesquisa anteriores:
+
+exiqgrep -i [ -r | -f ] ...
+
+12 - Use -c para retornar a quantidade de mensagens que casam com as opções de pesquisa acima:
+
+exiqgrep -c ...
+
+13 - Retornar apenas o ID das mensagens de toda a fila:
+
+exiqgrep -i
+
+14 - Iniciar o envio da fila:
+
+exim -q -v
+
+15 - Iniciar o envio da fila apenas para as mensagens locais:
+
+exim -ql -v
+
+16 - Remover uma mensagem da fila:
+
+exim -Mrm message-id [ message-id ... ]
+
+17 - Congelar uma mensagem:
+
+exim -Mf message-id [ message-id ... ]
+
+18 - Enviar uma mensagem da fila:
+
+exim -Mt message-id [ message-id ... ]
+
+19 - Enviar uma mensagem da fila, mesmo que o tempo de timeout foi alcançado ou não e independente se está congelada ou não:
+
+exim -M message-id [ message-id ... ]
+
+20 - Enviar uma mensagem da fila, mas somente se o retry time foi alcançado:
+
+exim -Mc message-id [ message-id ... ]
+
+21 - Forçar uma mensagem a falhar e retornar como "cancelado pelo administrator":
+
+exim -Mg message-id [ message-id ... ]
+
+22 - Remover todas as mensagens da fila:
+
+exiqgrep -i | xargs exim -Mrm
+
+23 - Remover todas as mensagens congeladas (frozen):
+
+exiqgrep -z -i | xargs exim -Mrm
+
+24 - Remover todas as mensagens mais velhas que 5 dias (86400 * 5 = 432000 segundos):
+
+exiqgrep -o 432000 -i | xargs exim -Mrm
+
+25 - Congelar todas as mensagens da fila de um remetente especifico:
+
+exiqgrep -i -f luser@example.tld | xargs exim -Mf
+
+26 - Ver o cabeçalho de uma mensagem:
+
+exim -Mvh message-id
+
+27 - Ver o corpo de uma mensagem:
+
+exim -Mvb message-id
+
+28 - Ver os logs de uma mensagem:
+
+exim -Mvl message-id
+
+29 - Adicionar um destinatário à uma mensagem:
+
+exim -Mar message-id address [ address ... ]
+
+30 - Alterar o remetente de uma mensagem:
+
+exim -Mes message-id address
+
+31 - Testar se um email é válido:
+
+exim -bt user@domain.com
+
+
+Exemplo prático:  Como remover os bounces da fila do exim?
+
+ exim -bp |grep "<>" | awk -F" " '{print $3}' > /tmp/mailbounce.log;
+ for i in $(cat /tmp/mailbounce.log); exim -Mrm $i; done
