@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteCond %{SERVER_PORT} !^443$
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule . /index.php [L]
+
+</IfModule>
+
+O que esse código faz é forçar que todo o tráfego do seu site seja carregado com o HTTPS ativado.
