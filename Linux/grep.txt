@@ -1,0 +1,4 @@
+Procurar string dentro dos arquivos e subpastas.
+
+grep -R "container propaganda-top" /var/www/blogdodoc_v2/*
+

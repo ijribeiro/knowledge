@@ -1,0 +1,482 @@
+       git init --bare nesha.git
+
+   23  nano nesha.git/hooks/post-receive
+   24  chmod +x nesha.git/hooks/post-receive
+   25  a2enmod rewrite
+   26  a2enmod expires deflate headers php7.2 ssl
+   27  service apache2 restart
+   28  nano /etc/apache2/sites-available/nesha.conf
+   29  a2ensite nesha
+   30  systemctl apache2 restart
+
+   31  systemctl httpd restart
+   32  service apache2 restart
+   35  nano nesha.conf
+   36  service apache2 reload
+   37  systemctl restart apache2
+   38  nano nesha.conf
+   39  systemctl restart apache2
+   40  nano nesha.conf
+   41  systemctl restart apache2
+   42  nano nesha.conf
+   43  nano default-ssl.conf
+   44  nano nesha.conf
+
+   51  nano /etc/apache2/sites-available/nesha.conf
+   52  systemctl restart apache2
+   53  systemctl stop apache2
+   54  systemctl start apache2
+   55  a2dissite 000-default.conf
+   56  systemctl reload apache2
+   59  a2ensite 000-default.conf
+   60  systemctl reload apache2
+   61  a2dissite 000-default.conf
+   62  systemctl reload apache2
+   65  nano config/config.yml
+   66  sudo nano config/config.yml
+   67  ini_set('display_errors', 1);
+   68  nano web/index.php
+   69  nano config/config.yml
+
+   77  ls -la
+   78  ./bin/doctrine orm:schame-toll:create
+   79  ./bin/doctrine orm:schema-toll:create
+   80  ./bin/doctrine orm:schema-tool:create
+   81  apt install php-mysql
+   82  apt update
+   83  sudo mysql -u root -p
+   84  nano config/config.yml
+   85  cat config/config.yml
+   86  mysql -uroot -p
+   87  nano config/config.yml
+   88  exit
+   89  ls -la
+   90  cd /var/www/nesha/
+   91  ls -la
+   92  cd /var/www/nesha/
+   93  composer install
+   94  apt inistall composer
+   95  sudo apt inistall composer
+   96  sudo apt install composer
+   97  composer install
+   98  cd /var/www/nesha/config/
+   99  ls -la
+  100  cp config.yml.dist config.yml
+  101  ls -la
+  102  nano config.yml
+  103  cat /var/www/nesha/config/config.yml
+  104  mysql -u nesha -p nesha < /var/www/nesha/dumpivan.sql
+  105  cd /var/www/nesha
+  106  nano web/index.php
+  107  ls -la
+  108  cd web/
+  109  ls -la
+  110  tar -xvzf uploadtmp.tar
+  111  ls -la upload/
+  112  cd upload/
+  113  rm uploadtmp.tar
+  114  mkdir produtos
+  115  mkdir galerias
+  116  cd ..
+  117  chmod -R 777 upload/
+  118  ls -la upload/
+  119  cd ..
+  120  ]
+  121  cd ..
+  122  cd /var/www/nesha/
+  123  ls -la
+  124  rm dumpivan.sql
+  125  rm dump04032019.sql
+  126  ls -la
+  127  cd web/upload/
+  128  ls -la
+  129  cd produtos/
+  130  ls -la
+  131  cd ..
+  132  history
+  133  cd ..
+  134  cat config/config.yml
+  135  mysql -u nesha -p
+  136  mysql -u nesha -p nesha < dump010920190853.sql
+  137  nano web/index.php
+  138  ./bin/doctrine orm:schema-tool:update --complete --force
+  139  msyql -u nesha -p
+  140  mysql -u nesha -p
+  141  mysql -u nesha -p nesha < dumpivan01092019.sql
+  142  nano web/index.php
+  143  df -h
+  144  nano src/W6/Controller/DashBoardController.php
+  145  LS -LA
+  146  ls la
+  147  ls -laa
+  148  ls -la
+  149  rm dump010920190853.sql
+  150  rm dumpivan01092019.sql
+  151  mv web/upload
+  152  ls
+  153  tar -xvzf upload.tar
+  154  df -h
+  155  ls -la
+  156  rm updload.tar
+  157  rm upload.tar
+  158  df -h
+  159  mysql -u nesha -p
+  160  cat config/config.yml
+  161  mysql -u nesha -p
+  162  ls -la
+  163  history
+  164  nano /etc/apache2/nesha.conf
+  165  nano /etc/apache2/sites-available/nesha.conf
+  166  ls -la
+  167  rm uploadtmp.tar
+  168  rm importar*.php
+  169  ls -la
+  170  cd upload/
+  171  ls -la
+  172  cd ..
+  173  dh -f
+  174  df -h
+  175  exit
+  176  nano /etc/apache2/sites-available/nesha.conf
+  177  exit
+  178  nano /etc/apache2/sites-available/nesha.conf
+  179  exit
+  180  nano /etc/apache2/sites-available/nesha.conf
+  181  history
+  182  systemctl restart apache2
+  183  nano /etc/apache2/sites-available/nesha.conf
+  184  systemctl restart apache2
+  185  nano /etc/apache2/sites-available/nesha.conf
+  186  systemctl restart apache2
+  187  nano /etc/apache2/sites-available/nesha.conf
+  188  systemctl restart apache2
+  189  ls -la
+  190  cd /var/www/nesha/
+  191  ls -la
+  192  ls -la web/
+  193  cd /var/www/nesha/
+  194  ls -la
+  195  cd /
+  196  nano /etc/apache2/sites-enabled/
+  197  nano /etc/apache2/sites-enabled/nesha.conf
+  198  history
+  199  systemctl reload apache2
+  200  nano /etc/apache2/sites-enabled/nesha.conf
+  201  nano /etc/apache2/sites-available/nesha.conf
+  202  history
+  203  nano /etc/apache2/sites-available/nesha.conf
+  204  hstory
+  205  history
+  206  a2dissite 000-default.conf
+  207  systemctl reload apache2
+  208  ls -la
+  209  cd /etc/ssl/certs/
+  210  ls -la
+  211  cd ..
+  212  ls -la
+  213  nano openssl.cnf
+  214  cd ../
+  215  cd ..
+  216  sudo -H ./letsencrypt-auto certonly --standalone -
+  217  sudo -H ./letsencrypt-auto certonly --standalone -d neshashop.com -d www.neshashop.com
+  218  cd /opt/letsencrypt
+  219  sudo -H ./letsencrypt-auto certonly --standalone -d neshashop.com -d www.neshashop.com
+  220  sudo ls /etc/letsencrypt/live
+  221  ls
+  222  cd ..
+  223  sudo ls /etc/letsencrypt/live
+  224  sudo ls /etc/letsencrypt/
+  225  cd /opt/letsencrypt
+  226  ./certbot-auto certificates
+  227  sudo -H ./letsencrypt-auto certonly --standalone --renew-by-default -d neshashop.coom -d www.neshashop.com
+  228  sudo -H ./letsencrypt-auto certonly --standalone --renew-by-default -d neshashop.com -d www.neshashop.com
+  229  ./certbot-auto certificates
+  230  system reload apache2
+  231  systemd reload apache2
+  232  history
+  233  systemctl reload apache2
+  234  ./letsencrypt-auto renew
+  235  ./certbot-auto certificates
+  236  certbot certonly -a webroot -w /var/www/nesha -d neshashop.com -d www.neshashop.com
+  237  ls
+  238  ./certbot-auto certificates
+  239  ls
+  240  ./certbot-auto certificates
+  241  systemctl reload apache2
+  242  ./certbot-auto certificates
+  243  sudo certbot --apache
+  244  ./certbot-auto certificates
+  245  certbot --apache -d neshashop.com -d www.neshashop.com
+  246  cd ..
+  247  nano etc/apache2/sites-available/nesha.conf
+  248  systemctl reload apache2
+  249  certbot --apache -d neshashop.com -d www.neshashop.com
+  250  certbot --apache -d neshashop.com
+  251  service apache2 reload
+  252  nano etc/apache2/sites-available/nesha.conf
+  253  service apache2 reload
+  254  nano etc/apache2/sites-available/nesha.conf
+  255  nano etc/apache2/sites-available/nesha-le-ssl.conf
+  256  service apache2 reload
+  257  nano etc/apache2/sites-available/nesha.conf
+  258  exit
+  259  nano /etc/apache2/sites-enabled/nesha.conf
+  260  systemctl restart apache2
+  261  cat /etsudo add-apt-repository ppa:certbot/certbot
+  262  Este trecho faz parte do conteúdo da página https://tudosobrehospedagemdesites.com.br/como-instalar-certificado-lets-encrypt/, do site Tudo Sobre Hospedagem de Sites - https://tudosobrehospedagemdesites.com.br/.
+  263  sudo add-apt-repository ppa:certbot/certbot
+  264  sudo apt-get update
+  265  Este trecho faz parte do conteúdo da página https://tudosobrehospedagemdesites.com.br/como-instalar-certificado-lets-encrypt/, do site Tudo Sobre Hospedagem de Sites - https://tudosobrehospedagemdesites.com.br/.
+  266  Os textos, imagens e vídeos do site Tudo Sobre Hospedagem de Sites estão protegidos por direitos autorais e não podem ser reproduzidos sem autorização prévia. Para solicitar autorização para reprodução do mesmo, entre em contato através do e-mail contato@tudosobrehospedagemdesites.com.br.
+  267  sudo apt-get update
+  268  sudo apt-get install python-certbot-apache
+  269  sudo certbot --apache -d meudominio.com -d www.meudominio.com
+  270  sudo certbot --apache
+  271  sudo certbot --apache -d neshashop.com -d neshashop.com
+  272  sudo certbot --apache -d
+  273  ls -la /var/log/letsencrypt/letsencrypt.log
+  274  cat /var/log/letsencrypt/letsencrypt.log
+  275  cat /etc/letsencrypt/cli.ini
+  276  cat /etc/letsencrypt/options-ssl-apache.conf
+  277  sudo certbot --apache -d neshashop.com -d www.neshashop.com
+  278  find / -type f -name ".certbot.lock"
+  279  cat /etc/letsencrypt/.certbot.lock
+  280  cat /etc/apache2/.certbot.lock
+  281  cat /var/lib/letsencrypt/.certbot.lock
+  282  rm /etc/letsencrypt/.certbot.lock
+  283  sudo certbot --apache -d neshashop.com -d www.neshashop.com
+  284  find / -type f -name "certbot"
+  285  cat /usr/bin/certbot
+  286  systemctl restart apache2
+  287  find / -type f -name ".certbot.lock" -exec rm {}
+  288  find / -type f -name ".certbot.lock" -exec rm {}
+  289  find / -type f -name ".certbot.lock" -exec rm
+  290  ps -ef | grep certb
+  291  kill 4437
+  292  kill 4438
+  293  kill 4625
+  294  ps -ef | grep certb
+  295  kill 2385
+  296  ps -ef | grep certb
+  297  find / -type f -name ".certbot.lock" -exec rm
+  298  find / -type f -name "certbot"
+  299  find / -type f -name ".certbot.lock"
+  300  sudo certbot --apache -d neshashop.com -d www.neshashop.com
+  301  pkill letsencrypt,certbot
+  302  ps -ef | grep certb
+  303  sudo certbot --apache
+  304  sudo certbot --apache -D
+  305  sudo certbot --apache -d
+  306  sudo certbot --apache -d neshashop.com
+  307  sudo certbot --help
+  308  sudo certbot renew --dry-run
+  309  sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+  310  cd /opt/letsencrypt
+  311  ls -la
+  312  sudo -H ./letsencrypt-auto certonly --standalone -d neshashop.com -d www.neshashop.com
+  313  sudo ls /etc/letsencrypt/live
+  314  cd .. /
+  315  cd ;;
+  316  cd ..
+  317  sudo ls /etc/letsencrypt/live
+  318  sudo ls /etc/letsencrypt/
+  319  sudo ls /etc/letsencryp
+  320  sudo ls /etc/letsencrypt
+  321  sudo ls /etc/letsencrypt/accounts/
+  322  sudo ls /etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/
+  323  sudo ls /etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/
+  324  sudo ls /etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org/directory/
+  325  sudo -H ./letsencrypt-auto certonly --standalone --renew-by-default -d neshashop.com -d www.neshasho.com
+  326  ./certbot-auto certificates
+  327  history
+  328  find / -type f -name "certbot-auto"
+  329  cd opt/letsencrypt/
+  330  ./certbot-auto certificates
+  331  find / -type f -name ".certbot.lock"
+  332  find / -type f -name ".certbot.lock" -exec rm {} \;
+  333  sudo -H ./letsencrypt-auto certonly --standalone --renew-by-default -d neshashop.com -d www.neshasho.com
+  334  ./certbot-auto certificates
+  335  nano /var/www/nesha/config/config.yml
+  336  xit
+  337  exit
+  338  cd /var/www/nesha/
+  339  ls -la
+  340  cd web/
+  341  mv Dump20190902.sql ../
+  342  cd ..
+  343  ls
+  344  cat config/config.yml
+  345  mysql -u nesha -p nesha < Dump20190902.sql
+  346  nano web/index.php
+  347  ls -la
+  348  rm googlead6a358781ee6cb2.html
+  349  ls -la
+  350  cd ..
+  351  nano /etc/apache2/sites-available/nesha-le-ssl.conf
+  352  nano /etc/apache2/sites-available/nesha.conf
+  353  nano openssl.cnf
+  354  history
+  355  systemctl reload apache2
+  356  a2dissite 000-default.conf
+  357  a2dissite default-ssl.conf
+  358  systemctl reload apache2
+  359  ./certbot-auto certificates
+  360  cd /opt/letsencrypt/
+  361  ./certbot-auto certificates
+  362  nano /etc/letsencrypt/live/neshashop.com/fullchain.pem
+  363  nano /etc/letsencrypt/live/neshashop.com/privkey.pem
+  364  nano /etc/letsencrypt/live/neshashop.com/cert.pem
+  365  nano /etc/letsencrypt/live/neshashop.com/chain.pem
+  366  cd ..
+  367  ls -la
+  368  systemctl stop apache2
+  369  systemctl start apache2
+  370  nano /etc/apache2/sites-enabled/nesha.conf
+  371  nano /etc/apache2/sites-enabled/nesha-le-ssl.conf
+  372  systemctl restart apache2
+  373  nano /etc/apache2/sites-enabled/nesha.conf
+  374  systemctl reload apache2
+  375  nano /etc/apache2/sites-enabled/nesha-le-ssl.conf
+  376  nano /etc/apache2/sites-enabled/nesha.conf
+  377  systemctl reload apache2
+  378  systemctl restart apache2
+  379  nano /etc/apache2/sites-enabled/nesha.conf
+  380  systemctl restart apache2
+  381  nano /etc/apache2/sites-enabled/nesha.conf
+  382  nano /etc/apache2/sites-enabled/nesha-le-ssl.conf
+  383  nano /etc/apache2/sites-enabled/nesha.conf
+  384  nano /etc/apache2/sites-enabled/nesha-le-ssl.conf
+  385  history|less
+  386  nano /etc/php/7.2/apache2/php.ini
+  387  sudo service apache2 reload
+  388  nano /var/www/nesha/config/config.yml
+  389  nano /etc/apache2/sites-enabled/nesha.conf
+  390  exit
+  391  nano /etc/php/7.2/apache2/php.ini
+  392  sudo service apache2 restart
+  393  nano /etc/php/7.2/apache2/php.ini
+  394  sudo service apache2 reload
+  395  nano /etc/apache2/sites-enabled/nesha.conf
+  396  sudo service apache2 reload
+  397  nano /etc/apache2/sites-enabled/nesha.conf
+  398  sudo service apache2 reload
+  399  nano /etc/apache2/sites-enabled/nesha.conf
+  400  fg
+  401  sudo service apache2 reload
+  402  nano /etc/apache2/sites-enabled/nesha.conf
+  403  sudo service apache2 reload
+  404  nano /etc/apache2/sites-enabled/nesha.conf
+  405  sudo service apache2 reload
+  406  nano /etc/apache2/sites-enabled/nesha.conf
+  407  sudo service apache2 reload
+  408  nano /etc/apache2/sites-enabled/nesha.conf
+  409  sudo service apache2 reload
+  410  nano /etc/apache2/sites-enabled/nesha.conf
+  411  sudo service apache2 reload
+  412  nano /etc/apache2/sites-enabled/nesha.conf
+  413  sudo service apache2 reload
+  414  nano /etc/apache2/sites-enabled/nesha.conf
+  415  sudo service apache2 reload
+  416  nano /etc/apache2/sites-enabled/nesha.conf
+  417  fg
+  418  sudo service apache2 reload
+  419  nano /etc/apache2/sites-enabled/nesha.conf
+  420  sudo service apache2 reload
+  421  nano /etc/apache2/sites-enabled/nesha.conf
+  422  sudo service apache2 reload
+  423  nano /etc/apache2/sites-enabled/nesha.conf
+  424  nano /var/www/nesha/web/.htaccess
+  425  nano /etc/apache2/sites-enabled/nesha.conf
+  426  nano /var/www/nesha/web/.htaccess
+  427  nano /etc/apache2/sites-enabled/nesha.conf
+  428  sudo service apache2 reload
+  429  nano /etc/apache2/sites-enabled/nesha.conf
+  430  sudo service apache2 reload
+  431  nano /etc/apache2/sites-enabled/nesha-le-ssl.conf
+  432  nano /etc/letsencrypt/options-ssl-apache.conf
+  433  nano /etc/apache2/sites-enabled/nesha.conf
+  434  sudo service apache2 reload
+  435  nano /etc/apache2/sites-enabled/nesha.conf
+  436  sudo service apache2 reload
+  437  nano /etc/apache2/sites-enabled/nesha.conf
+  438  fg
+  439  sudo service apache2 reload
+  440  fg
+  441  sudo service apache2 reload
+  442  nano /var/www/nesha/web/.htaccess
+  443  nano /etc/apache2/sites-enabled/nesha.conf
+  444  fg
+  445  sudo service apache2 reload
+  446  fg
+  447  sudo service apache2 reload
+  448  nano /etc/apache2/sites-enabled/nesha.conf
+  449  sudo service apache2 reload
+  450  nano /etc/apache2/sites-enabled/nesha.conf
+  451  sudo service apache2 reload
+  452  nano /etc/apache2/sites-enabled/nesha.conf
+  453  sudo service apache2 reload
+  454  nano /etc/apache2/sites-enabled/nesha.conf
+  455  sudo service apache2 reload
+  456  nano /etc/apache2/sites-enabled/nesha.conf
+  457  sudo service apache2 reload
+  458  nano /etc/apache2/sites-enabled/nesha.conf
+  459  nano /var/www/nesha/web/
+  460  nano /var/www/nesha/web/.htaccess
+  461  sudo service apache2 reload
+  462  nano /var/www/nesha/web/.htaccess
+  463  fg
+  464  nano /etc/apache2/sites-enabled/nesha.conf
+  465  nano /etc/apache2/sites-enabled/nesha.conf
+  466  nano /var/www/nesha/web/.htaccess
+  467  nano /var/www/nesha/config/config.yml
+  468  nano /etc/apache2/sites-enabled/nesha.conf
+  469  sudo service apache2 reload
+  470  nano /etc/apache2/sites-enabled/nesha.conf
+  471  nano /var/www/nesha/web/.htaccess
+  472  nano /etc/apache2/sites-enabled/nesha.conf
+  473  sudo service apache2 reload
+  474  nano /etc/apache2/sites-enabled/nesha.conf
+  475  sudo service apache2 reload
+  476  exit
+  477  cd /var/www/nesha/
+  478  ls -la
+  479  cat config/config.yml
+  480  mysql -u nesha -p nesha < Dump20190902.sql
+  481  sudo service apache2 reload
+  482  cat /var/www/nesha/config/config.yml
+  483  mysql -u nesha -p
+  484  nano /var/www/nesha/views/front/categorias.twig
+  485  cat /var/www/nesha/config/config.yml
+  486  mysql -u nesha -p
+  487  cat /var/www/nesha/config/config.yml
+  488  mysql -u root -p
+  489  mysql -u root -p
+  490  mysql -u nesha -p
+  491  exit
+  492  cd /var/www/nesha/
+  493  cat /var/www/nesha/config/config.yml
+  494  mysql -u nesha -p nesha < Dumphoje.sql
+  495  mysql -u nesha -p
+  496  git status
+  497  cat /var/www/nesha/config/config.yml
+  498  mysql -u nesha -p
+  499  cd /var/www/nesha/web/
+  500  ls -la
+  501  rm importar*.php
+  502  ls -la
+  503  exit
+  504  cd /var/www/nesha/web/
+  505  ls -la
+  506  date
+  507  exit
+  508  cd /var/www/nesha/web/
+  509  ls -la
+  510  rm importar*.php
+  511  exit
+  512  cd /var/www/nesha/web/
+  513  ls -la
+  514  rm importar*.php
+  515  cd ~
+  516  ls -la
+  517  nano nesha.git/hooks/post-receive
+  518  history

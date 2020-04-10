@@ -1,0 +1,4 @@
+
+USE your_database_name;
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' IDENTIFIED BY 'password'
+

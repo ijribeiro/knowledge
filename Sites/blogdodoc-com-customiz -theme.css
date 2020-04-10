@@ -1,0 +1,24 @@
+#metaslider_container_28598 {
+	padding: 15px 0px 0px 0px;
+	z-index: -99999
+}
+
+#na-top-navigation ul {
+	z-index:999999;
+}
+
+.flex-direction-nav {
+	display: none;
+}
+
+#publicidade-topo .slider-28598 {
+	width: 60%;
+}
+
+#metaslider_28576 .slides{
+ overflow-x: scroll !important;
+}
+
+.box-small .entry-title{
+    min-height: 80px;
+}
