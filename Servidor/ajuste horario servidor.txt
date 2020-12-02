@@ -1,0 +1,1 @@
+/usr/sbin/ntpdate -b -u ntp.directadmin.com
